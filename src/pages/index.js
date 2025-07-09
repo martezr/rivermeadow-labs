@@ -6,7 +6,6 @@ import AWS from '/img/aws.svg';
 import Azure from '/img/azure.svg';
 import HPE from '/img/hpe.svg';
 
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 //import React from 'react';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -20,13 +19,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Get Started
-          </Link>
-        </div>
 </div>
     </header>
   );

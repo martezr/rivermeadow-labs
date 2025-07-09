@@ -132,24 +132,11 @@ const config = {
               // ... more items
             ],
           },
-          {
-            label: 'FAQ',
-            to: '/pages/faq',
-          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Content',
-            items: [
-              {
-                label: 'Workshops',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
