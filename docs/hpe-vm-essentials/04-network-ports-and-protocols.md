@@ -1,0 +1,27 @@
+# Networking Ports and Protocols
+---
+## OS Based (Agent) Migration Ports and Protocols
+The following table details the network ports and protocols that are required for OS based migrations in addition to the general platform ports and protocols:
+
+| Name                            | Description          | Source                     | Target                           | Port/Protocol   |
+|---------------------------------|----------------------|----------------------------|-------------------------|-----------------|
+|  **Migration Data Transfer** |     Data Transfer    |     RMS Target Worker      |     Source Workload              |     5994/TCP    |
+|  **Windows Agent Installation (OPTIONAL)**  |Automated agent installation|     Migration Appliance    |     Source Workload (Windows)    |     445/TCP     |
+|  **Windows Agent Installation (OPTIONAL)**  |Automated agent installation|     Migration Appliance    |     Source Workload (Windows)    |     5985/TCP     |
+|  **Linux Agent Installation (OPTIONAL)**    | Automated agent installation |     Migration Appliance    |     Source Workload (Linux)      |     22/TCP      |
+
+
+## VM Based Migration Ports and Protocols
+The following table details the network ports and protocols that are required for VM based migrations in addition to the ports:
+
+|     Name                   |     Description      |     Source                      |     Target                     |     Port/Protocol    |
+|----------------------------|----------------------|---------------------------------|--------------------------------|----------------------|
+| vCenter API Access         |     API Access             |     RMS Migration Appliance     |     VMware vCenter Server      |     443/TCP          |
+| RMS Data Transfer |     Data Transfer    |     RMS Migration Appliance     |     RMS Source Worker Appliance |     5994/TCP         |
+| RMS Data Transfer |     Data Transfer    |     RMS Target Worker           |     RMS Source Worker Appliance|     5994/TCP         |
+| Orchestration |     Orchestration    |     RMS Target Worker           |     RMS Migration Appliance  |     443/TCP         |
+| RMS API Communication |API communication| RMS Target Worker |     RMS Migration Appliance    |     8888/TCP         |
+| RMS Log Aggregation |API communication| RMS Target Worker |     RMS Migration Appliance    |     8080/TCP         |
+| RMS API Communication |API communication| RMS Source Worker Appliance |     RMS Migration Appliance    |     8888/TCP         |
+| vCenter API Access     |     API Access             |     RMS Source Worker Appliance |     VMware vCenter Server      |     443/TCP          |
+| VMware Network Copy    |     NBDSSL Transport |     RMS Source Worker Appliance |     VMware ESXi Hosts          |     902/TCP          |

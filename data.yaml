@@ -1,0 +1,37 @@
+---
+clouds:
+  - name: AWS
+    destination: docs/aws/
+    cloud_name: AWS
+    cloud_code: aws
+    type: public_cloud
+  - name: Nutanix
+    destination: docs/nutanix/
+    cloud_name: Nutanix
+    cloud_code: nutanix
+    type: hypervisor
+  - name: HPE VME
+    destination: docs/hpe-vm-essentials/
+    cloud_name: HPE Morpheus VM Esssentials
+    cloud_code: vme
+    type: hypervisor
+  - name: Azure
+    destination: docs/azure/
+    cloud_name: Azure
+    cloud_code: azure
+    type: public_cloud
+  - name: Hyper-V
+    destination: docs/hyper-v/
+    cloud_name: Hyper-V
+    cloud_code: hyper-v
+    type: hypervisor
+  - name: GCP
+    destination: docs/gcp/
+    cloud_name: GCP
+    cloud_code: gcp
+    type: public_cloud
+  - name: OpenShift
+    destination: docs/red-hat-openshift/
+    cloud_name: OpenShift
+    cloud_code: openshift
+    type: hypervisor
