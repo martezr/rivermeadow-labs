@@ -35,21 +35,19 @@ export default function Home() {
         <div className="homecontent">
           <div className="jumpsection">
             <h3>Jump to Section</h3>
-            <a href='#publiccloud'>
-              Demo
-            </a>
-            <a href='#privatecloud'>
-              Test
-            </a>
+            <ul>
+              <li><a href='#publiccloud'>Public Cloud</a></li>
+              <li><a href='#privatecloud'>Private Cloud</a></li>
+            </ul>
           </div>
           <div className="workshops">
             <div>
               <h1 nav-label="Public Cloud" id="publiccloud">Public Cloud</h1>
-              <p>Migrate workloads to the public  cloud</p>
+              <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
               <ul className="cards-grid-list">
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -58,14 +56,14 @@ export default function Home() {
                         <span className="workshop-card-header">Amazon Web Services (AWS)</span>
                       </div>
                       <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
+                        <span className="workshop-card-text">Learn how to migrate, optimize and modernize workloads to AWS utilizing the RiverMeadow platform.</span>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Azure" className="card-link-anchor" href="/rivermeadow-labs/docs/azure/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -74,20 +72,20 @@ export default function Home() {
                         <span className="workshop-card-header">Microsoft Azure</span>
                       </div>
                       <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
+                        <span className="workshop-card-text">Learn how to migrate, optimize and modernize workloads to Microsoft Azure utilizing the RiverMeadow platform.</span>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Google Cloud" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/google-cloud.png" alt="Siamese cat"/>
+                        <span className="workshop-card-header">Google Cloud</span>
                       </div>
                       <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
+                        <span className="workshop-card-text">Learn how to migrate, optimize and modernize workloads to Google Cloud utilizing the RiverMeadow platform.</span>
                       </div>
                     </div>
                   </div>
@@ -96,11 +94,11 @@ export default function Home() {
             </div>
             <div>
               <h1 nav-label="Private Cloud" id="privatecloud">Private Cloud</h1>
-              <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to an on-premises virtualization solution.</p>
+              <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the private clouds supported by the RiverMeadow platform.</p>
               <ul className="cards-grid-list">
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -116,65 +114,26 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Red Hat OpenShift" className="card-link-anchor" href="/rivermeadow-labs/docs/red-hat-openshift/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/microsoft-azure.png" alt="Siamese cat"/>
+                        <span className="workshop-card-header">Red Hat OpenShift</span>
                       </div>
                       <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
+                        <span className="workshop-card-text">Learn how to migrate, optimize and modernize workloads to Red Hat OpenShift utilizing the RiverMeadow platform.</span>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Nutanix" className="card-link-anchor" href="/rivermeadow-labs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/google-cloud.png" alt="Siamese cat"/>
+                        <span className="workshop-card-header">Nutanix AHV</span>
                       </div>
                       <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
-                    <div className="workshop-card-content">
-                      <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/aws.png" alt="Siamese cat"/>
-                      </div>
-                      <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/azure/introduction"><span aria-hidden="true">&nbsp;</span></a>
-                    <div className="workshop-card-content">
-                      <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/microsoft-azure.png" alt="Siamese cat"/>
-                      </div>
-                      <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
-                    <div className="workshop-card-content">
-                      <div className="workshop-card-logo">
-                        <img className="workshop-card-logo-image" src="/img/google-cloud.png" alt="Siamese cat"/>
-                      </div>
-                      <div className="workshop-card-description">
-                        <span className="workshop-card-text">Create, manage, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.</span>
+                        <span className="workshop-card-text">Learn how to migrate, optimize and modernize workloads to Nutanix AHV utilizing the RiverMeadow platform.</span>
                       </div>
                     </div>
                   </div>

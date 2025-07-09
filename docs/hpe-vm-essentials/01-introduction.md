@@ -1,35 +1,16 @@
 # Introduction
 ---
-This workshop introduces the RiverMeadow Workload Mobility Platform and its capabilities to help organizations migrate, optimize, and modernize workloads to .
+This workshop introduces the RiverMeadow Workload Mobility Platform and its capabilities to help organizations migrate, optimize, and modernize workloads to HPE Morpheus VM Esssentials.
 
 ### Duration
 The workshop is expected to last ninety (90) minutes in duration.
 
 ### Audience
 
-This workshop is intended for anyone looking to migrate workloads from on-premises hypervisors or public clouds to .
+This workshop is intended for anyone looking to migrate workloads from on-premises hypervisors or public clouds to HPE Morpheus VM Esssentials.
 
 ### Prerequisites
 
 The following prerequisites should be met by the attendees prior to the workshop:
 
-* Familiarity with cloud concepts and terminology
-* Basic understanding of  services and architecture
-
-
-# Introduction
-•	Introduction to RiverMeadow
-•	Platform Capabilities
-•	RiverMeadow Architecture
-Core Concepts
-•	Source Inventory
-•	Migration Extensions
-•	Move Groups
-•	Migration Profiles
-•	Hardening Profiles
-•	Delta Migrations
-Platform Components
-•	SaaS Control Plane
-•	Migration Appliance
-•	Source Worker Appliance
-•	Source OS Agent
+* Basic understanding of HPE Morpheus VM Esssentials services and architecture

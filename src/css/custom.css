@@ -87,10 +87,10 @@
   -webkit-box-orient: vertical;
   font-size: 0.875rem;
 }
-
+/* 
 a:hover {
   color: white;
-}
+} */
 
 .workshop-card-logo-image {
   object-fit: contain;

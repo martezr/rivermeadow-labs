@@ -123,13 +123,12 @@ const config = {
               },
               {
                 label: 'Red Hat OpenShift',
-                to: '/docs/azure/introduction',
+                to: '/docs/red-hat-openshift/introduction',
               },
               {
                 label: 'HPE Morpheus VM Essentials',
-                to: '/docs/azure/introduction',
+                to: '/docs/hpe-vm-essentials/introduction',
               },
-              // ... more items
             ],
           },
         ],
