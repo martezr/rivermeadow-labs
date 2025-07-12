@@ -4,10 +4,10 @@ import styles from './styles.module.css';
 
 # OS Agent
 ---
-A lightweight agent (less than 25 MB) that is installed on Windows or Linux systems that are migrated using OS based migrations.
+The RiverMeadow OS agent is a lightweight agent (less than 25 MB) that is installed on Windows or Linux source servers that are migrated using OS based migrations.
 
 ### Automated agent installation
-The installation of the RiverMeadow agent can be automatically installed by the migration appliance deployed into the target environment. The migration appliance uses remote protocols (SSH, WinRM, SMB) to connect to the source workload and perform the agent installation.
+The RiverMeadow agent can be automatically installed from the migration appliance that is deployed into the target environment. The migration appliance uses remote protocols (SSH, WinRM, SMB) to connect to the source workload and perform the agent installation.
 
 ![](/img/rivermeadow_add_source.png)
 
@@ -15,28 +15,28 @@ The installation of the RiverMeadow agent can be automatically installed by the 
 The RiverMeadow agent can be manually installed by downloading the agent package from the migration appliance. This enables the agent to be rolled out across an environment using 3rd party automation tools like Ansible or Group Policy.
 
 #### Downloading the RMS Agent Package
-The RiverMeadow agent installer can be downloaded from the migration appliance that is deployed into the target environment. The agent downloads page is accessible at the following URL:
-
-```
-https://rms_migration_appliance_ip_address:8888/agent
-```
+The RiverMeadow agent installer can be downloaded from the migration appliance that is deployed into the target environment. The agent downloads page is accessible at the following URL: https://rms_migration_appliance_ip_address:8888/agent
 
 ![An image from the static](/img/rms_agent_page.png)
 
 <Tabs queryString="agent-installation">
   <TabItem value="windows" label="Windows" default>
-    Download the RiverMeadow agent to the source Windows server from the migration appliance using the following PowerShell command:
+    Download the RiverMeadow agent to the source Windows server from the migration appliance
 
     ```powershell
-    Invoke-WebRequest -Uri "https://rms_migration_appliance_ip_address:8888/agent/RMS%20Agent%20x64.msi" -OutFile "C:\Downloads\RMS Agent x64.msi"
+    Invoke-WebRequest -Uri "https://rms_migration_appliance_ip_address:8888/agent/RMS%20Agent%20x64.msi" -OutFile "C:\Downloads\RMS Agent x64.msi" -SkipCertificateCheck
     ```
-    Install the RiverMeadow agent using the following command:
+    Install the RiverMeadow agent
 
-    ```bash
+    ```powershell
     msiexec /i "RMS Agent x64.msi" /qn
     ```
 
-    Check agent status
+    Check the service status of the RiverMeadow agent
+
+    ```powershell
+    Get-Service "RMS*"
+    ```
 
   </TabItem>
   <TabItem value="redhat" label="Red Hat">

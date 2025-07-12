@@ -1,4 +1,0 @@
-# Summary
----
-Congratulations on completing this introduction to the RiverMeadow workload mobility platform. 
-Throughout this workshop, you've gained comprehensive knowledge of RiverMeadow's core functionalities. 

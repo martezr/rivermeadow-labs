@@ -2,29 +2,32 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Adding source servers
+# Adding Source Servers
 ---
-Source servers are added to the RiverMeadow platform's source inventory using the UI, REST API, a CSV or the VMware vSphere integration.
+Source servers are added to the source inventory by manually adding entries or automatically using the VMware vSphere inventory integration.
 
-Adding source workloads to the RiverMeadow inventory can be done using the following methods:
+Adding source servers to the RiverMeadow inventory can be done using the following methods:
 
-* **RiverMeadow UI:** Source workloads for OS based migrations (agent) can be added one at a time using the RiverMeadow user interface.
-* **CSV Upload:** Source workloads for OS based migrations (agent) can be added in bulk by uploading a CSV file via the RiverMeadow user interface.
-* **REST API:** Source workloads for OS based migrations (agent) can be added in bulk in a programattic fashion using the RiverMeadow REST API.
-* **VMware vSphere:** Source workloads for VM based migrations (agentless) can be added in bulk via the RiverMeadow integration with VMware vSphere to query the vSphere virtual machines using the vSphere REST API.
+* **RiverMeadow UI:** Source servers for OS based migrations (agent) can be added one at a time using the RiverMeadow UI.
+* **CSV Upload:** Source servers for OS based migrations (agent) can be added in bulk by uploading a CSV file via the RiverMeadow user interface.
+* **REST API:** Source servers for OS based migrations (agent) can be added in bulk in a programattic fashion using the RiverMeadow REST API.
+* **VMware vSphere:** Source servers for VM based migrations (agentless) can be added in bulk via the RiverMeadow integration with VMware vSphere to query the vSphere virtual machines using the vSphere REST API.
+
+Prior to adding your source servers, ensure that you meet all of the network requirements.
 
 <Tabs>
   <TabItem value="ui" label="UI" default>
 ## RiverMeadow UI
-Source workloads can be individually added using the RiverMeadow UI.
-* **IP Address:** The IP Address of the source workload. This IP address must be reachable from the migration appliance and the target worker.
-* **Pre-Installed Agent:** Whether the RiverMeadow agent has already been installed on the source workload using a method seperate from the automated agent installation performed by the RiverMeadow platform.
-* **Username (Optional):** The username of the user account used to automate the installation of the RiverMeadow agent on the source machine.
-* **Password (Optional):** The password of the user account used to automate the installation of the RiverMeadow agent on the source machine.
-* **Tags:** RiverMeadow tags associated with the inventoried source workload for organization or filtering purposes. 
+Source servers can be individually added to the source inventory using the RiverMeadow UI.
+* **Source IP Address:** The IP Address of the source server. This IP address must be reachable from the migration appliance and the target worker.
+* **Pre-Installed Agent:** Whether the RiverMeadow agent has already been installed on the source server using a method seperate from the automated agent installation performed by the RiverMeadow platform.
+* **Store Source Credentials:** Whether the RiverMeadow agent has already been installed on the source server using a method seperate from the automated agent installation performed by the RiverMeadow platform.
+* **Username (Optional):** The username of the user account used to automate the installation of the RiverMeadow agent on the source server.
+* **Password (Optional):** The password of the user account used to automate the installation of the RiverMeadow agent on the source server.
+* **Tags:** RiverMeadow tags associated with the inventoried source server for organization or filtering purposes. 
 
 :::info
-RiverMeadow tags are used only by the platform are not applied to the source or target workloads.
+RiverMeadow tags are used only by the platform are not applied to the source or target servers.
 :::
 
 
@@ -33,20 +36,20 @@ RiverMeadow tags are used only by the platform are not applied to the source or 
   </TabItem>
   <TabItem value="csv" label="CSV">
 
-## CSV Upload
-Source workloads can be added in bulk using a Comma Seperated Value (CSV) file.
+    ## CSV Upload
+    Source servers can be added in bulk using a Comma Seperated Value (CSV) file.
 
-**Reference Fields**
+    **Reference Fields**
 
-The following table details the supported fields for a CSV upload:
+    The following table details the supported fields for a CSV upload:
 
-|Name|Description|Field|
-|----|-----------|-----|
-|    |           |     |
+    |Name|Description|Field|
+    |----|-----------|-----|
+    |    |           |     |
 
   </TabItem>
   <TabItem value="api" label="API">
-## REST API
-The RiverMeadow REST API can be used to programatically create . This enables source workloads to be added using popular programming languages such as Python or Golang
+    ## REST API
+    The RiverMeadow REST API can be used to programatically create . This enables source servers to be added using popular programming languages such as Python or Golang
   </TabItem>
 </Tabs>

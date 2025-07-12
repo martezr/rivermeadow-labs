@@ -128,3 +128,15 @@ a:hover {
 .workshop-card-header {
   font-weight: 700;
 }
+
+p {
+  font-size: 16px;
+}
+
+li {
+  font-size: 16px;
+}
+
+.sidebar-header {
+  font-size: 20px;
+}

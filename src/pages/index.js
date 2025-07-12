@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import AWS from '/img/aws.svg';
 import Azure from '/img/azure.svg';
+import Google from '/img/google.svg';
 import HPE from '/img/hpe.svg';
 
 //import React from 'react';
@@ -82,6 +83,9 @@ export default function Home() {
                     <a aria-label="Get Started - Google Cloud" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
+                        <span className="logo-image">
+                          <Google />
+                        </span>
                         <span className="workshop-card-header">Google Cloud</span>
                       </div>
                       <div className="workshop-card-description">

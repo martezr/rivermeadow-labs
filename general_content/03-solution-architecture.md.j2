@@ -1,8 +1,32 @@
 # Solution Architecture
+---
 
-**Migration Appliance**
+![RiverMeadow Solution Architecture](/img/rivermeadow_aws_architecture.png)
+<center>**RiverMeadow Platform Architecture**</center>
 
-**Source Worker Appliance**
+## Solution Components
 
-**Agent**
+The RiverMeadow solution architecture includes the following components:
+
+### SaaS Platform
+
+The RiverMeadow SaaS platform is responsible for migration orchestration, logging, and notifications. The UI and REST API for interacting with RiverMeadow platform is also 
+
+### Migration Appliance
+
+A virtual appliance (virtual machine) that is deployed into the target {{ cloud_name }} environment. The appliance brokers source and target instance configuration metadata used for orchestration.
+
+### Source Worker Appliance
+
+A virtual appliance (virtual machine) that is deployed into the source VMware vSphere cluster. Mounts virtual machine snapshots and facilitates data transfer to target workers.
+
+### OS Agent
+
+A lightweight agent (less than 25 MB) that is installed on Windows or Linux systems that are migrated using OS based migrations. Facilitates data transfer to the target worker and enables optimization and modernization capabilities.
+
+
+### Target Worker
+
+A minimal image that is mounted on the target instance or virtual machine during the migration process (initial and delta). Responsible for transferring data from the source workload and preparing the system for the target cloud or hypervisor.
+
 
