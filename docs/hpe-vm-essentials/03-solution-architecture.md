@@ -10,7 +10,7 @@ The RiverMeadow solution architecture includes the following components:
 
 ### SaaS Platform
 
-The RiverMeadow SaaS platform is responsible for migration orchestration, logging, and notifications. The UI and REST API for interacting with RiverMeadow platform is also 
+The RiverMeadow SaaS platform is responsible for migration orchestration, logging, and notifications. Web UI (migrate.rivermeadow.com) and REST API for interacting with the RiverMeadow platform.
 
 ### Migration Appliance
 

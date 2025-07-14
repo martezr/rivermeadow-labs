@@ -2,9 +2,6 @@
 ---
 This workshop introduces the RiverMeadow Workload Mobility Platform and its capabilities to help organizations migrate, optimize, and modernize workloads to Azure.
 
-### Duration
-The workshop is expected to last ninety (90) minutes in duration.
-
 ### Audience
 
 This workshop is intended for anyone looking to migrate workloads from on-premises hypervisors or public clouds to Azure.
