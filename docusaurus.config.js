@@ -34,9 +34,9 @@ const docs = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RiverMeadow Interactive Labs',
-  tagline: 'Learn about the RiverMeadow workload mobility platform at your own pace with step-by-step interactive lessons designed for hands-on practitioners, no matter where you are in your journey.',
-  favicon: 'img/rivermeadow_favicon.webp',
+  title: 'Learn RiverMeadow',
+  tagline: 'Start learning with step-by-step. Actionable examples help you learn to provision, secure, connect, or run any application on any infrastructure.',
+  favicon: 'img/favicon.png',
   staticDirectories: ['static'],
 
   // Set the production url of your site here
@@ -102,15 +102,15 @@ const config = {
       },
     },
       navbar: {
-        title: 'RiverMeadow',
+ //       title: 'RiverMeadow',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/rivermeadow_favicon.webp',
+          src: 'img/rivermeadow_logo.png',
         },
         items: [
           {
             type: 'dropdown',
-            label: 'Workshops',
+            label: 'Courses',
             position: 'left',
             items: [
               {
@@ -137,7 +137,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: 'Social',
             items: [
               {
                 label: 'YouTube',
@@ -148,7 +148,7 @@ const config = {
                 href: 'https://www.linkedin.com/company/rivermeadow-software',
               },
               {
-                label: 'X (formerly Twitter)',
+                label: 'X',
                 href: 'https://x.com/RiverMeadow1',
               },
             ],

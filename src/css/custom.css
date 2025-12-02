@@ -164,3 +164,11 @@ li {
 h1 {
   font-size: 2rem;
 }
+
+.hero__title {
+  text-align: left;
+}
+
+.hero__subtitle {
+  text-align: left;
+}
