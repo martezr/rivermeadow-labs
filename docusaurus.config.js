@@ -73,6 +73,10 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
+        gtag: {
+          trackingID: 'G-KGV615EMB1',
+          anonymizeIP: true,
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -113,6 +117,10 @@ const config = {
             label: 'Courses',
             position: 'left',
             items: [
+              {
+                label: 'RiverMeadow Fundamentals',
+                to: '/docs/fundamentals/introduction',
+              },
               {
                 label: 'Amazon Web Services (AWS)',
                 to: '/docs/aws/introduction',

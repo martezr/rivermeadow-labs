@@ -6,6 +6,7 @@ import AWS from '/img/aws.svg';
 import Azure from '/img/azure.svg';
 import Google from '/img/google.svg';
 import HPE from '/img/hpe.svg';
+import RiverMeadow from '/img/favicon.png';
 
 //import React from 'react';
 import Heading from '@theme/Heading';
@@ -29,19 +30,58 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Workload Mobility Platform"
+      description="Start learning how to migrate, optimize and modernize workloads using the RiverMeadow workload mobility platform.">
       <HomepageHeader />
       <main style={{padding: 24 +'px'}}>
         <div className="homecontent">
           <div className="jumpsection">
             <h3>Jump to Section</h3>
             <ul>
+              <li><a href='#general'>General</a></li>
               <li><a href='#publiccloud'>Public Cloud</a></li>
               <li><a href='#privatecloud'>Private Cloud</a></li>
             </ul>
           </div>
           <div className="workshops">
+            <div>
+              <h1 nav-label="Public Cloud" id="publiccloud">General</h1>
+              <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
+              <ul className="cards-grid-list">
+                <li>
+                  <div className="workshop-card">
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/fundamentals/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <div className="workshop-card-content">
+                      <div className="workshop-card-logo">
+                        <span className="logo-image">
+                          <AWS />
+                        </span>
+                        <span className="workshop-card-header">RiverMeadow Fundamentals</span>
+                      </div>
+                      <div className="workshop-card-description">
+                        <span className="workshop-card-text">Learn about the RiverMeadow platform and the platform's migration, optimization, and modernization features.</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="workshop-card">
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/fundamentals/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <div className="workshop-card-content">
+                      <div className="workshop-card-logo">
+                        <span className="logo-image">
+                          <AWS />
+                        </span>
+                        <span className="workshop-card-header">RiverMeadow Advanced</span>
+                      </div>
+                      <div className="workshop-card-description">
+                        <span className="workshop-card-text">Learn about the RiverMeadow platform and the platform's migration, optimization, and modernization features.</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div>
               <h1 nav-label="Public Cloud" id="publiccloud">Public Cloud</h1>
               <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
