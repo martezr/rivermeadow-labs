@@ -24,9 +24,12 @@ The following are examples of storage optimization that can be completed utilizi
 
   This is the detailed content
 
-  Allocated Storage = 2,000 GB
-  Used Storage = 600 GB
-  Price per GB = .08
+  **Allocated Storage** = 2,000 GB
+
+  **Used Storage** = 600 GB
+  
+  **Price per GB** = .08
+  
   2,000 GB x .08 = $160 USD per month
 
 </details>
@@ -51,7 +54,7 @@ Windows Server and Red Hat Enterprise Linux (RHEL)
 
 **OS Hardening Examples**
 
-The following are examples of SQL Server modernization that can be completed utilizing the SQL Modernization feature:
+The following are examples of operating system hardening using the RiverMeadow platform:
 
 <details>
   <summary>**Windows Server 2019 Hardening**</summary>
@@ -62,7 +65,6 @@ The following are examples of SQL Server modernization that can be completed uti
   console.log("Markdown features including the code block are available");
   ```
 
-  You can use Markdown here including **bold** and _italic_ text, and [inline link](https://docusaurus.io)
 </details>
 
 <details>
@@ -70,9 +72,4 @@ The following are examples of SQL Server modernization that can be completed uti
 
   This is the detailed content
 
-  ```js
-  console.log("Markdown features including the code block are available");
-  ```
-
-  You can use Markdown here including **bold** and _italic_ text, and [inline link](https://docusaurus.io)
 </details>

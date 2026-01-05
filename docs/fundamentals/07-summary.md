@@ -1,14 +1,11 @@
 # Summary
 ---
-In this course you learned about the benefits and features of the RiverMeadow platform to migrate, optimize, and modernize workloads from any source to a broad set of supported target platforms.
+In this course you learned about the benefits and features of the RiverMeadow platform to migrate, optimize, and modernize workloads from any source to an extensive number of supported target platforms running on-premises and in the public cloud.
 
-* **Workload mobility** to rapidly migrate servers at scale to accelerate cloud or VMware migrations.
-* **Workload optimization** to harden and rightsize servers during the migration process.
-* **Workload modernization** to reduce technical debt and operational costs with automated OS, automated MS SQL Server upgrades, and Linux OS conversions.
+* **Workload mobility** enables rapid migration of servers at scale for accelerated cloud and VMware migrations.
+* **Workload optimization** enables enhanced security and cloud costs reduction with operating system hardening and storage rightsizing during server migration.
+* **Workload modernization** enables technical debt and operational costs reduction with automated operating system and Microsoft SQL Server upgrades as well as Linux OS conversions during server migration.
 
 ### Next Steps
 
-Now that you've successfully completed this introductory course you're ready for the more advanced courses that are available.
-
-* Advanced
-
+Now that you've successfully completed this introductory course and developed a foundational understanding of the RiverMeadow platform, you're ready for the more advanced courses that are available.

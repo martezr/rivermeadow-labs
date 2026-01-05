@@ -13,14 +13,14 @@ The following are examples of how the RiverMeadow platform can enable migrations
 <details>
   <summary>**VMware vSphere to Amazon Web Services (AWS) EC2**</summary>
 
-  This is the detailed content
+  Migrate VMware vSphere virtual machines running on-premises to AWS EC2
 
 </details>
 
 <details>
   <summary>**Microsoft Hyper-V to Microsoft Azure**</summary>
 
-  This is the detailed content
+  Migrate Windows and Linux virtual machines running on-premises to Microsoft Azure
 
 </details>
 
@@ -90,7 +90,7 @@ The following are examples of how the RiverMeadow platform can enable migrations
 
 </details>
 
-### VMware On-Premises to 
+### VMware On-Premises to VMware Alternatives
 
 Customers looking to rapidly exit their on-premises datacenters or colocation facilities as part of a broader transition to the public cloud may utilize cloud hosted VMware solutions (EVS, AVS, GCVE, etc.) as a seamless on-ramp to place workloads close to cloud native services for AI and ML.
 
@@ -121,6 +121,11 @@ The following are examples of how the RiverMeadow platform can enable migrations
 
 ### Modernization Factory
 
+Organizations are 
+
+**Examples**
+
+The following are examples of how the RiverMeadow platform can enable migrations from one public cloud to another public cloud:
 
 <details>
   <summary>**VMware vSphere to Microsoft Hyper-V**</summary>

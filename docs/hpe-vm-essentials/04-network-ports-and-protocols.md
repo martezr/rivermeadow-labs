@@ -11,19 +11,19 @@ The following table details the network ports and protocols that are required fo
 | **Target Worker Orchestration** | Orchestration communication between target workers and the associated migration appliance |  Target Worker | Migration Appliance | 443/TCP |
 | **Migration Appliance API Access** | API communication between the target workers and the associated migration appliance|  Target Worker | Migration Appliance | 8888/TCP |
 
-## OS Based (Agent) Migration Ports and Protocols
-The following table details the network ports and protocols that are required for OS based migrations in addition to the general platform ports and protocols:
+## OS Based Migration Ports and Protocols
+The following table details the network ports and protocols that are required for OS based migrations in addition to the general platform network ports and protocols:
 
 | Name                            | Description          | Source                     | Target                           | Port/Protocol   |
 |---------------------------------|----------------------|----------------------------|-------------------------|-----------------|
 |  **Migration Data Transfer** |     Data Transfer    |      Target Worker      |     Source Workload              |     5994/TCP    |
-|  **Windows Agent Installation (OPTIONAL)**  |Automated agent installation|     Migration Appliance    |     Source Workload (Windows)    |     445/TCP     |
-|  **Windows Agent Installation (OPTIONAL)**  |Automated agent installation|     Migration Appliance    |     Source Workload (Windows)    |     5985/TCP     |
-|  **Linux Agent Installation (OPTIONAL)**    | Automated agent installation |     Migration Appliance    |     Source Workload (Linux)      |     22/TCP      |
+|  **Windows Utility Installation (OPTIONAL)**  | Automated utility installation|     Migration Appliance    |     Source Workload (Windows)    |     445/TCP     |
+|  **Windows Utility Installation (OPTIONAL)**  | Automated utility installation|     Migration Appliance    |     Source Workload (Windows)    |     5985/TCP     |
+|  **Linux Utility Installation (OPTIONAL)**    | Automated utility installation |     Migration Appliance    |     Source Workload (Linux)      |     22/TCP      |
 
 
-## VM Based (Agentless) Migration Ports and Protocols
-The following table details the network ports and protocols that are required for VM based migrations in addition to the ports:
+## VM Based Migration Ports and Protocols
+The following table details the network ports and protocols that are required for VM based migrations in addition to the general platform network ports and protocols:
 
 |     Name                   |     Description      |     Source                      |     Target                     |     Port/Protocol    |
 |----------------------------|----------------------|---------------------------------|--------------------------------|----------------------|

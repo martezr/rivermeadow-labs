@@ -34,8 +34,8 @@ const docs = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Learn RiverMeadow',
-  tagline: 'Start learning with step-by-step. Actionable examples help you learn to provision, secure, connect, or run any application on any infrastructure.',
+  title: 'RiverMeadow Self-Paced Training',
+  tagline: 'Start your learning journey learning on how to migrate, optimize, and modernize workloads using the RiverMeadow Workload Mobility Platform.',
   favicon: 'img/favicon.png',
   staticDirectories: ['static'],
 
@@ -77,17 +77,6 @@ const config = {
           trackingID: 'G-KGV615EMB1',
           anonymizeIP: true,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -102,11 +91,11 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
     docs: {
       sidebar: {
-        hideable: true,
+        hideable: false,
       },
     },
       navbar: {
- //       title: 'RiverMeadow',
+//        title: 'Documentation',
         logo: {
           alt: 'My Site Logo',
           src: 'img/rivermeadow_logo.png',
@@ -139,28 +128,20 @@ const config = {
               },
             ],
           },
+        {
+          position: 'left',
+          to: '/guides',
+          label: 'Guides',
+        },
+        {
+          position: 'left',
+          to: '/demos',
+          label: 'Demos',
+        },
         ],
       },
       footer: {
-        style: 'dark',
         links: [
-          {
-            title: 'Social',
-            items: [
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/@RiverMeadowsoftware',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/rivermeadow-software',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/RiverMeadow1',
-              },
-            ],
-          },
         ],
         copyright: `© ${new Date().getFullYear()} RiverMeadow Software Inc. All Rights Reserved`,
       },

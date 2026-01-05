@@ -1,10 +1,9 @@
 # Summary
 ---
-Congratulations on completing this introduction to the RiverMeadow workload mobility platform. In this workshop, you've learned about the core capabilities of the RiverMeadow platform and how to use the platform to migrate workloads to HPE Morpheus VM Esssentials.
+In this course you learned about how to use the RiverMeadow platform to migrate, optimize, and modernize workloads from any source to HPE Morpheus VM Essentials.
 
 ## Additional resources
 
-The following resources provide more information on topics in this workshop or related to this workshop.
+The following resources provide additional information on topics in this course.
 
-
-* RiverMeadow AWS Documentation: [https://docs.rivermeadow.com/](https://docs.rivermeadow.com/migrating-to-aws-cloud)
+* RiverMeadow HPE Morpheus VM Essentials Documentation: [https://docs.rivermeadow.com/](https://docs.rivermeadow.com/migrating-to-hpe-vme)

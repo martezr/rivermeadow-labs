@@ -71,7 +71,7 @@ Te
 The following are examples of conversions that can be completed utilizing the OS conversion feature:
 
 <details>
-  <summary>**Windows Server 2008 R2 to Windows 2022**</summary>
+  <summary>**Microsoft SQL Server 2012 to Microsoft SQL Server 2022**</summary>
 
   This is the detailed content
 
@@ -105,15 +105,19 @@ The following are examples of conversions that can be completed utilizing the OS
 <details>
   <summary>**CentOS to Rocky Linux**</summary>
 
-  CentOS has been discontinued in favor of CentOS Stream
+  CentOS was a popular . The linux conversion feature enables workloads running CentOS
 
 </details>
 
 <details>
   <summary>**Red Hat Enterprise Linux (RHEL) to Amazon Linux**</summary>
 
-  Red Hat Enterprise Linux (RHEL) servers are converted to Amazon Linux during a larger migration to Amazon Web Services (AWS) to reduce licensing costs
+  Many organizations utilize Red Hat Enterprise Linux (RHEL) as the standard Linux distribution of choice in their on-premises estate. Amazon Linux is an rpm-based Linux distribution that is an alternative to Red Hat Enterprise Linux (RHEL) that is optimized for running on EC2. This provides an opportunity for organizations to eliminate their licensing costs for RHEL by transitioning to Amazon Linux. The conversion from Red Hat Enterprise Linux (RHEL) can be automated during the migration using the RiverMeadow platform's OS Conversion capablity. 
 
 </details>
 
-A detailed list of supported Linux operating system conversions can be found in the RiverMeadow documentation - [https://docs.rivermeadow.com/support-matrix-for-os-modernization](https://docs.rivermeadow.com/support-matrix-for-os-modernization).
+:::tip
+
+A detailed list of supported Linux operating systems that can be converted is available in the RiverMeadow documentation: [https://docs.rivermeadow.com/support-matrix-for-os-modernization](https://docs.rivermeadow.com/support-matrix-for-os-modernization).
+
+:::

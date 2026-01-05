@@ -7,8 +7,6 @@ import Azure from '/img/azure.svg';
 import Google from '/img/google.svg';
 import HPE from '/img/hpe.svg';
 import RiverMeadow from '/img/favicon.png';
-import OpenShift from '/img/openshift.svg';
-import Nutanix from '/img/nutanix.svg';
 
 //import React from 'react';
 import Heading from '@theme/Heading';
@@ -37,14 +35,22 @@ export default function Home() {
       <HomepageHeader />
       <main style={{padding: 24 +'px'}}>
         <div className="homecontent">
+          <div className="jumpsection">
+            <h3>Jump to Section</h3>
+            <ul>
+              <li><a href='#general'>General</a></li>
+              <li><a href='#publiccloud'>Public Cloud</a></li>
+              <li><a href='#privatecloud'>Private Cloud</a></li>
+            </ul>
+          </div>
           <div className="workshops">
             <div>
-              <h1 nav-label="General" id="general">Introduction to RiverMeadow</h1>
+              <h1 nav-label="Public Cloud" id="publiccloud">General</h1>
               <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
               <ul className="cards-grid-list">
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started" className="card-link-anchor" href="/rivermeadow-labs/docs/fundamentals/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/fundamentals/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -77,7 +83,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h1 nav-label="Public Cloud" id="publiccloud">Public Cloud Workload Mobility</h1>
+              <h1 nav-label="Public Cloud" id="publiccloud">Public Cloud</h1>
               <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
               <ul className="cards-grid-list">
                 <li>
@@ -114,7 +120,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - Google Cloud" className="card-link-anchor" href="/rivermeadow-labs/docs/gcp/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Google Cloud" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -131,12 +137,12 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h1 nav-label="Private Cloud" id="privatecloud">On-Premises Workload Mobility</h1>
+              <h1 nav-label="Private Cloud" id="privatecloud">Private Cloud</h1>
               <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the private clouds supported by the RiverMeadow platform.</p>
               <ul className="cards-grid-list">
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/hpe-vm-essentials/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - AWS" className="card-link-anchor" href="/rivermeadow-labs/docs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
                         <span className="logo-image">
@@ -155,9 +161,6 @@ export default function Home() {
                     <a aria-label="Get Started - Red Hat OpenShift" className="card-link-anchor" href="/rivermeadow-labs/docs/red-hat-openshift/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
-                        <span className="logo-image">
-                          <OpenShift />
-                        </span>
                         <span className="workshop-card-header">Red Hat OpenShift</span>
                       </div>
                       <div className="workshop-card-description">
@@ -168,12 +171,9 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="workshop-card">
-                    <a aria-label="Get Started - Nutanix" className="card-link-anchor" href="/rivermeadow-labs/docs/nutanix/introduction"><span aria-hidden="true">&nbsp;</span></a>
+                    <a aria-label="Get Started - Nutanix" className="card-link-anchor" href="/rivermeadow-labs/aws/introduction"><span aria-hidden="true">&nbsp;</span></a>
                     <div className="workshop-card-content">
                       <div className="workshop-card-logo">
-                        <span className="logo-image">
-                          <Nutanix />
-                        </span>
                         <span className="workshop-card-header">Nutanix AHV</span>
                       </div>
                       <div className="workshop-card-description">

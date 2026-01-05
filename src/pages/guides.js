@@ -28,13 +28,14 @@ function HomepageHeader() {
   );
 }
 
+
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Workload Mobility Platform"
       description="Start learning how to migrate, optimize and modernize workloads using the RiverMeadow workload mobility platform.">
-      <HomepageHeader />
       <main style={{padding: 24 +'px'}}>
         <div className="homecontent">
           <div className="workshops">
