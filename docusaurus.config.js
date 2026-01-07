@@ -34,7 +34,7 @@ const docs = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RiverMeadow Self-Paced Training',
+  title: 'RiverMeadow Self-Paced Enablement',
   tagline: 'Start your learning journey learning on how to migrate, optimize, and modernize workloads using the RiverMeadow Workload Mobility Platform.',
   favicon: 'img/favicon.png',
   staticDirectories: ['static'],

@@ -10,20 +10,21 @@ The RiverMeadow solution architecture includes the following components:
 
 ### SaaS Platform
 
+The RiverMeadow SaaS platform is the 
+
 The RiverMeadow SaaS platform is responsible for migration orchestration, logging, and notifications. Web UI (migrate.rivermeadow.com) and REST API for interacting with the RiverMeadow platform.
 
 ### Migration Appliance
 
-A virtual appliance (virtual machine) that is deployed into the target HPE Morpheus VM Esssentials environment. The appliance brokers source and target instance configuration metadata used for orchestration.
+The RiverMeadow migration appliance is a virtual appliance (virtual machine) that is deployed into the target HPE Morpheus VM Esssentials or HPE Morpheus Enterprise on an HVM cluster environment. The appliance is responsible for local migration orchestration operations such as provisioning HVM instances via the Morpheus REST API in tandem with RiverMeadow platform.
 
 ### Source Worker Appliance
 
-A virtual appliance (virtual machine) that is deployed into the source VMware vSphere cluster. Mounts virtual machine snapshots and facilitates data transfer to target workers.
+A virtual appliance (virtual machine) that is deployed into the source VMware vSphere cluster. The source worker appliance is responsible for mounting VMware virtual machine snapshots and facilitating the data transfer to target workers running on the HVM hypervisor. The appliance is automatically deployed into the source VMware vSphere environment from the migration appliance.
 
-### OS Agent
+### Migration Utility
 
-A lightweight agent (less than 25 MB) that is installed on Windows or Linux systems that are migrated using OS based migrations. Facilitates data transfer to the target worker and enables optimization and modernization capabilities.
-
+The RiverMeadow migration utility is a lightweight utility (less than 25 MB) that is deployed to the source Windows or Linux systems for OS based migrations. The utility is responsible for data transfer to the target worker and enables optimization and modernization on the clone once the initial data sync (migration) has been completed. The utility does not require a reboot of the source system and can be automatically removed following the completion of the migration or modernization. The utility runs as a service on the system and listens on port 5994 for incoming requests from the RiverMeadow migration appliance or target worker.
 
 ### Target Worker
 

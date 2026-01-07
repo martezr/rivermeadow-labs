@@ -50,7 +50,7 @@ export default function Home() {
                         <span className="logo-image">
                         <img src="/rivermeadow-labs/img/rmicon-apple.png" alt="Apple Icon" style={{ width: 30, height: 30 }} />
                         </span>
-                        <span className="workshop-card-header">RiverMeadow Fundamentals</span>
+                        <span className="workshop-card-header">RiverMeadow 101</span>
                       </div>
                       <div className="workshop-card-description">
                         <span className="workshop-card-text">Learn about the RiverMeadow platform and the platform's migration, optimization, and modernization features.</span>
@@ -66,7 +66,7 @@ export default function Home() {
                         <span className="logo-image">
                           <img src="/rivermeadow-labs/img/rmicon-apple.png" alt="Apple Icon" style={{ width: 30, height: 30 }} />
                         </span>
-                        <span className="workshop-card-header">RiverMeadow Advanced</span>
+                        <span className="workshop-card-header">RiverMeadow 201</span>
                       </div>
                       <div className="workshop-card-description">
                         <span className="workshop-card-text">Learn about the RiverMeadow platform and the platform's migration, optimization, and modernization features.</span>

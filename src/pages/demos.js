@@ -4,13 +4,31 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import VMwareMigration from '/img/demo_vmware_migration.png';
 import AWSMigration from '/img/demo_aws_migration.png';
-
-
-//import React from 'react';
+import VMEMigration from '/img/demo_vme_migration.png';
+import OpenShiftMigration from '/img/demo_openshift_migration.png';
+import HyperVMigration from '/img/demo_hyperv_migration.png';
+import Select from 'react-select'
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 import React from 'react';
+
+const options = [
+  { value: 'mobility', label: 'Mobility' },
+  { value: 'optimization', label: 'Optimization' },
+  { value: 'modernization', label: 'Modernization' }
+]
+
+const technologies = [
+    { value: 'aws', label: 'Amazon Web Services (AWS)' },
+ //   { value: 'azure', label: 'Microsoft Azure' },
+ //   { value: 'gcp', label: 'Google Cloud Platform (GCP)' },
+    { value: 'hyperv', label: 'Microsoft Hyper-V' },
+ //   { value: 'nutanix', label: 'Nutanix AHV' },
+    { value: 'openshift', label: 'Red Hat OpenShift' },
+    { value: 'vme', label: 'HPE Morpheus VM Essentials' },
+    { value: 'vmware', label: 'VMware vSphere' },
+];
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -27,58 +45,74 @@ function HomepageHeader() {
 }
 
 const demos = [
-  {
-    title: 'VM Migrations to VMware vSphere',
-    description: 'Experience a guided demo of migrating virtual machines to VMware vSphere using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
-    image: VMwareMigration,
-    iframeSrc: 'https://rivermeadow.storylane.io/demo/esajh5kbgml7?embed=popup',
-    categories: ['vmware', "workload mobility"],
-  },
     {
-    title: 'Cloud Migrations to AWS',
-    description: 'Experience a guided demo of migrating workloads to Amazon Web Services (AWS) using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient cloud mobility.',
-    image: AWSMigration,
-    iframeSrc: 'https://rivermeadow.storylane.io/demo/s7ci5jeropfx?embed=popup',
-    categories: ['aws', "workload mobility"],
-  },
+        title: 'Server migrations to VMware vSphere',
+        description: 'Experience a guided demo of migrating servers to VMware vSphere using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
+        image: VMwareMigration,
+        iframeSrc: 'https://rivermeadow.storylane.io/demo/esajh5kbgml7?embed=popup',
+        categories: ['vmware', "mobility","interactive"],
+    },
     {
-    title: 'Cloud Migrations to Microsoft Azure',
-    description: 'Experience a guided demo of migrating workloads to Microsoft Azure using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient cloud mobility.',
-    image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+        title: 'Server migrations to Amazon Web Services (AWS)',
+        description: 'Experience a guided demo of migrating servers to Amazon Web Services (AWS) using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient cloud mobility.',
+        image: AWSMigration,
+        iframeSrc: 'https://rivermeadow.storylane.io/demo/s7ci5jeropfx?embed=popup',
+        categories: ['aws', "mobility","interactive"],
+    },
+/*    {
+        title: 'Cloud migrations to Microsoft Azure',
+        description: 'Experience a guided demo of migrating workloads to Microsoft Azure using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient cloud mobility.',
+        image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+        categories: ['azure', "mobility","interactive"],
   },
   {
-    title: 'Cloud Migrations to Google Cloud Platform',
+    title: 'Cloud migrations to Google Cloud Platform',
     description: 'Experience a guided demo of migrating workloads to Google Cloud Platform (GCP) using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient cloud mobility.',
     image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+    categories: ['gcp', "mobility","interactive"],
+  },
+*/
+  {
+    title: 'Server migrations to HPE Morpheus VM Essentials',
+    description: 'Experience a guided demo of migrating servers to HPE Morpheus VM Essentials using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
+    image: VMEMigration,
+    iframeSrc: 'https://rivermeadow.storylane.io/demo/tlywo8kgkklt?embed=popup',
+    categories: ['vme', "mobility","interactive"],
   },
   {
-    title: 'VM Migrations to HPE Morpheus VM Essentials',
-    description: 'Experience a guided demo of migrating workloads to HPE Morpheus VM Essentials using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
-    image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+    title: 'Server migrations to Microsoft Hyper-V',
+    description: 'Experience a guided demo of migrating servers to Microsoft Hyper-V using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
+    image: HyperVMigration,
+    iframeSrc: 'https://rivermeadow.storylane.io/demo/13gzntcd79dk?embed=popup',
+    categories: ['hyperv', "mobility","interactive"],
   },
+  /*
   {
-    title: 'VM Migrations to Microsofot Hyper-V',
-    description: 'Experience a guided demo of migrating workloads to Microsoft Hyper-V using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
-    image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
-  },
-  {
-    title: 'VM Migrations to Nutanix AHV',
+    title: 'VM migrations to Nutanix AHV',
     description: 'Experience a guided demo of migrating workloads to Nutanix AHV using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
-    image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+    image: NutanixMigration,
+    categories: ['nutanix', "mobility","interactive"],
   },
+  */
   {
-    title: 'VM Migrations to Red Hat OpenShift',
-    description: 'Experience a guided demo of migrating workloads to Red Hat OpenShift using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
-    image: 'https://www.techzine.eu/wp-content/uploads/2020/06/nutanix-prism.png',
+    title: 'Server migrations to Red Hat OpenShift',
+    description: 'Experience a guided demo of migrating servers to Red Hat OpenShift using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
+    image: OpenShiftMigration,
+    iframeSrc: 'https://rivermeadow.storylane.io/demo/2koimciug9s1?embed=popup',
+    categories: ['openshift', "mobility","interactive"],
   },
+//  {
+//    title: 'RHEL OS conversion to Amazon Linux',
+//    description: 'Experience a guided demo of migrating servers to Red Hat OpenShift using the RiverMeadow platform. Explore the seamless process and key features that facilitate efficient workload mobility.',
+//    image: OpenShiftMigration,
+//    iframeSrc: 'https://rivermeadow.storylane.io/demo/gtcenwzprazs?embed=popup',
+//    categories: ['aws', "modernization","interactive"],
+ // },
   // Add additional demos as needed
 ];
 
-
-
-function DemoCardWithModal({demoTitle, demoDescription, demoImage, demoIframeSrc}) {
+function DemoCardWithModal({demoTitle, demoDescription, demoImage, demoIframeSrc, categories}) {
     const [open, setOpen] = React.useState(false);
-
     return (
         <div>
             <div className="workshop-card" style={{ padding: '0px'}}>
@@ -93,7 +127,13 @@ function DemoCardWithModal({demoTitle, demoDescription, demoImage, demoIframeSrc
                         <span className="workshop-card-text">
                             {demoDescription}
                         </span>
-                        <p>workload mobility</p>
+                        <div className="badgeRow">
+                            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                {categories.map((category, index) => (
+                                    <span key={index} className="badge">{category}</span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                     <button
                         className="button button--primary"
@@ -137,12 +177,12 @@ function DemoCardWithModal({demoTitle, demoDescription, demoImage, demoIframeSrc
                             </button>
                         </div>
                         </div>
-<div>
-  <script async src="https://js.storylane.io/js/v2/storylane.js"></script>
-  <div className="sl-embed" style={{position:'relative',paddingBottom:'calc(62.76% + 0px)',width:'100%',height:0,transform:'scale(1)'}}>
-    <iframe loading="lazy" className="sl-demo" src={demoIframeSrc} name="sl-embed" allow="fullscreen" allowfullscreen style={{position:'absolute',top:0,left:0,width:'100%!important',height:'100%!important',border:'1px solid rgba(63,95,172,0.35)',boxShadow:'0px 0px 18px rgba(26, 19, 72, 0.15)',boxSizing:'border-box'}}></iframe>
-  </div>
-</div>
+                        <div>
+                            <script async src="https://js.storylane.io/js/v2/storylane.js"></script>
+                            <div className="sl-embed" style={{position:'relative',paddingBottom:'calc(62.76% + 0px)',width:'100%',height:0,transform:'scale(1)'}}>
+                                <iframe loading="lazy" className="sl-demo" src={demoIframeSrc} name="sl-embed" allow="fullscreen" style={{position:'absolute',top:0,left:0,width:'100%!important',height:'100%!important',border:'1px solid rgba(63,95,172,0.35)',boxShadow:'0px 0px 18px rgba(26, 19, 72, 0.15)',boxSizing:'border-box'}}></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
@@ -153,6 +193,28 @@ function DemoCardWithModal({demoTitle, demoDescription, demoImage, demoIframeSrc
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
   const {siteConfig} = useDocusaurusContext();
+  const [filter, setFilter] = React.useState(false);
+  const [filteredDemos, setFilteredDemos] = React.useState(demos);
+
+  function handleFilterChange(selectedOptions) {
+    console.log('Selected options:', selectedOptions);
+    if (selectedOptions && selectedOptions.length > 0) {
+        console.log('Filtering demos based on selected options.');
+        const selectedValues = selectedOptions.map(option => option.value);
+        demos.filter(demo => console.log('Demo categories:', demo.categories));
+        setFilter(true);
+        // Change filtering to match ANY selected value, not ALL
+        const filtered = demos.filter(demo =>
+            demo.categories.some(category => selectedValues.includes(category))
+        );
+        setFilteredDemos(filtered);
+    } else {
+        setFilteredDemos(demos);
+    }
+  }
+
+  const demosToShow = filter ? filteredDemos : demos;
+
   return (
     <Layout
       title="RiverMeadow Product Demos"
@@ -162,22 +224,45 @@ export default function Home() {
         <div className="homecontent">
           <div className="workshops">
             <div>
-              <h1 nav-label="General" id="general">Interactive Demos</h1>
-              <p>Migrate Windows and Linux workloads from any physical, virtual, or cloud environment to one of the public clouds supported by the RiverMeadow platform.</p>
+              <div className="demoFiltersGroup">
+                <div className="demoFilters">
+                    {/* <div className="demoFilterItem">
+                        <div className="demoFilterItemTitle">Capability</div>
+                         <Select id="capability-select" className="basic-multi-select" classNamePrefix="select" isMulti options={options} onChange={handleFilterChange} />
+                    </div> */}
+                    <div className="demoFilterItem">
+                        <div className="demoFilterItemTitle">Technology</div>
+                         <Select id="technology-select" className="basic-multi-select" classNamePrefix="select" isMulti options={technologies} onChange={handleFilterChange} />
+                    </div>
+                </div>
+                </div>
               <ul className="cards-grid-list">
-                {demos.map((demo, index) => (
+                {demosToShow.map((demo, index) => (
                   <li key={index}>
-                    <DemoCardWithModal demoTitle={demo.title} demoDescription={demo.description} demoImage={demo.image} demoIframeSrc={demo.iframeSrc}  />
+                    <DemoCardWithModal demoTitle={demo.title} demoDescription={demo.description} demoImage={demo.image} demoIframeSrc={demo.iframeSrc} categories={demo.categories} />
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-          <div style={{backgroundColor: '#0A76FD', width: '80%', height:'200px', borderRadius: '8px', marginTop: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF'}}>
-            <p>Test</p>
+        <div className="demoJourney">
+          <div className="demoJourneyCard">
+            <div className="demoJourneyBody">
+                <div className="demoJourneyTitle">
+                    <h2 style={{ color: "#ffffff", fontSize: "3.5rem", maxWidth: "80%"}}>Experience the RiverMeadow Workload Mobility Platform</h2>
+                    <p style={{ color: "#ffffff", fontSize: "1.5rem", lineHeight: "150%", fontFamily: "Archivo, sans-serif"}}>Schedule a personalized demo to explore the full capabilities of the RiverMeadow platform and how it can meet your workload mobility needs.</p>
+                </div>
+                    <button
+                        className="button button--primary"
+                        style={{ marginTop: 16, height: '3.25rem', backgroundColor: '#ffffff', borderColor: '#ffffff', color: '#000000', fontWeight: '600' }}
+                        onClick={() => window.open('https://www.rivermeadow.com/contact-us', '_blank')}
+                    >
+                        Schedule Demo
+                    </button>
+            </div>
           </div>
-       {/* <HomepageFeatures /> */}
+        </div>
       </main>
     </Layout>
   );

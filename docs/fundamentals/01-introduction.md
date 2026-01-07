@@ -4,7 +4,7 @@ This course introduces the RiverMeadow Workload Mobility Platform and its capabi
 
 ### Audience
 
-This course is intended for anyone looking to migrate workloads.
+The RiverMeadow 101 or Introduction to RiverMeadow course is designed for anyone interested in learning about how the RiverMeadow platform can be used to migrate, optimize and modernize workloads across hybrid and multi-cloud environments.
 
 ### Prerequisites
 
@@ -16,6 +16,6 @@ The following prerequisites should be met by learners:
 
 After completing this course, you’ll be able to:
 
-* Identify common RiverMeadow use cases
-* Describe features of the RiverMeadow platform (mobility, optimization, modernization)
-* Understand how workloads can be optimized and modernized during workload migration
+* Identify and describe common RiverMeadow use cases.
+* Describe features of the RiverMeadow platform (mobility, optimization, modernization).
+* Describe the benefits of the platform's mobility, optimization, and modernization capabilities.

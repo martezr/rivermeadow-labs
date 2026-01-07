@@ -6,7 +6,13 @@ The RiverMeadow migration appliance is manually deployed on the target hyperviso
 
 
 
+## Virtual Image
 
+
+
+**Cypher Secret**
+
+The credentials for interacting with the Morpheus REST API can be securely stored in the native secrets management solution (Cypher) to avoid the credentials being exposed in plain text.
 
 
 
@@ -19,3 +25,6 @@ The RiverMeadow migration appliance is bundled as a QCOW2 image files that is de
 **Memory:** 16 GB
 
 **Disk Space:** 32 GB
+
+
+
